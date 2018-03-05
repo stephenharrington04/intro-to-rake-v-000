@@ -16,6 +16,11 @@ namespace :db do
     Student.create_table
   end
 
+  desc 'seed the database with some dummy data'
+  task :seed do
+    require_relative './db/seeds.db'
+  end
+
 end
 
 task :environment do
